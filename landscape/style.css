@@ -1,0 +1,101 @@
+html,
+body {
+  background-color: darkgray;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: darkgray;
+  font-size: 3.5rem;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.navigation {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.navigation > a {
+  display: inline-block;
+  margin-right: 1.6rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+.navigation > a:last-child {
+  margin-right: 0;
+}
+.navigation > a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 35rem;
+  height: 30rem;
+}
+
+.image {
+  width: 35rem;
+  height: 30rem;
+  border-radius: 10%;
+  display: block;
+}
+
+.thumbs-up {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 10px;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  transition: transform 0.2s;
+}
+
+.thumbs-down {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 10px;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  transition: transform 0.2s;
+}
+
+.thumbs-up:hover,
+.thumbs-down:hover {
+  transform: scale(1.1);
+  background-color: lightgreen;
+}
+
+.thumbs-up::selection,
+.thumbs-down::selection {
+  background: transparent;
+}

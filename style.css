@@ -1,0 +1,108 @@
+html,
+body {
+  background-color: darkgray;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  background-color: darkgray;
+  font-size: 3.5rem;
+  justify-content: space-evenly;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.navigation {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.navigation > a {
+  display: inline-block;
+  margin-right: 1.6rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+.navigation > a:last-child {
+  margin-right: 0;
+}
+.navigation > a:hover {
+  text-decoration: underline;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+  .navigation {
+    padding-bottom: 0.5rem;
+  }
+  .navigation > a {
+    font-size: 1rem;
+    margin-right: 0.6rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) and (orientation: landscape) {
+  .navigation {
+    padding-bottom: 0.5rem;
+  }
+  .navigation > a {
+    font-size: 1rem;
+    margin-right: 0.6rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
